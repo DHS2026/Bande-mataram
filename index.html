@@ -11,63 +11,70 @@
         .lyrics { height: 350px; overflow-y: hidden; border-top: 1px solid #FF9933; padding-top: 20px; font-size: 18px; line-height: 2.5; position: relative; }
         .line { opacity: 0.6; transition: 0.3s; }
         .active { color: #FF9933; font-weight: bold; transform: scale(1.1); opacity: 1; }
+        h2 {
+            color: #fff;
+            text-transform: uppercase;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FF9933, 0 0 40px #FF9933, 0 0 80px #FF9933;
+        }
+        .school-name { color: #FF9933; margin-top: -15px; margin-bottom: 20px; font-size: 16px; }
     </style>
 </head>
 <body>
 
 <div class="container">
     <h2>বন্দে মাতরম</h2>
+    <div class="school-name">DHAINAGAR HIGH SCHOOL (H.S.)</div>
+    
     <audio id="audio" controls>
-        <!-- আপনার ফাইলটি যেহেতু রিপোজিটরিতে আছে, তাই নিচে ফাইল নাম ঠিকঠাক দেওয়া হয়েছে -->
         <source src="Vande%20Mataram.mp3" type="audio/mpeg">
     </audio>
     
     <div class="lyrics" id="lyricsBox">
         <div id="content">
             <p class="line" data-time="0">বন্দে মাতরম্</p>
-            <p class="line" data-time="7">বন্দে মাতরম্</p>
-            <p class="line" data-time="11">সুজলাং সুফলাং</p>
-            <p class="line" data-time="16">মলয়জশীতলাং</p>
-            <p class="line" data-time="20">শস্যশ্যামলাং</p>
-            <p class="line" data-time="23">মাতরম্৷৷</p>
-            <p class="line" data-time="25">বন্দে মাতরম্</p>
-            <p class="line" data-time="29">শুভ্র-জ্যোৎস্না-পুলকিত-যামিনীম্</p>
-            <p class="line" data-time="36">ফুল্লকুসুমিত-দ্রুমদলশোভিনীম্</p>
-            <p class="line" data-time="43">সুহাসিনীং সুমধুরভাষিণীম্</p>
-            <p class="line" data-time="49">সুখদাং বরদাং মাতরম্৷৷</p>
-            <p class="line" data-time="54">বন্দে মাতরম্</p>
-            <p class="line" data-time="58">কোটি কোটিকণ্ঠ কলকল নিনাদকরালে,</p>
-            <p class="line" data-time="67">কোটি কোটী ভুজৈর্ধৃত-খর-করবালে,</p>
-            <p class="line" data-time="74">কে বলে মা তুমি অবলে ৷৷</p>
-            <p class="line" data-time="78">বহুবলধারিণীং</p>
-            <p class="line" data-time="80">নমামি তারিণীং</p>
-            <p class="line" data-time="82">রিপুদলবারিণীং</p>
-            <p class="line" data-time="85">মাতরম্৷৷</p>
-            <p class="line" data-time="87">বন্দে মাতরম্</p>
-            <p class="line" data-time="91">তুমি বিদ্যা তুমি ধর্ম্ম</p>
-            <p class="line" data-time="96">তুমি হৃদি তুমি মর্ম্ম</p>
-            <p class="line" data-time="101">ত্বং হি প্রাণাঃ শরীরে৷৷</p>
-            <p class="line" data-time="105">বাহুতে তুমি মা শক্তি</p>
-            <p class="line" data-time="110">হৃদয়ে তুমি মা ভক্তি</p>
-            <p class="line" data-time="114">তোমারই প্রতিমা গড়ি</p>
-            <p class="line" data-time="116">মন্দিরে মন্দিরে॥</p>
-            <p class="line" data-time="120">বন্দে মাতরম্</p>
-            <p class="line" data-time="125">ত্বং হি দুর্গা দশপ্রহরণধারিণী</p>
-            <p class="line" data-time="132">কমলা কমল-দলবিহারিণী</p>
-            <p class="line" data-time="136">বাণী বিদ্যাদায়িনী</p>
-            <p class="line" data-time="140">নমামি ত্বাং</p>
-            <p class="line" data-time="142">নমামি কমলাম্</p>
-            <p class="line" data-time="145">অমলাং অতুলাম্</p>
-            <p class="line" data-time="149">সুজলাং সুফলাম্</p>
-            <p class="line" data-time="153">মাতরম্॥</p>
-            <p class="line" data-time="156">বন্দে মাতরম্</p>
-            <p class="line" data-time="161">শ্যামলাং সরলাম্</p>
-            <p class="line" data-time="164">সুস্মিতাং ভূষিতাম্</p>
-            <p class="line" data-time="169">ধরণীং ভরণীম্</p>
-            <p class="line" data-time="174">মাতরম্॥</p>
-            <p class="line" data-time="176">বন্দে মাতরম্</p>
-            <p class="line" data-time="180">বন্দে মাতরম্</p>
-            <p class="line" data-time="185">SRS</p>
+            <p class="line" data-time="6">বন্দে মাতরম্</p>
+            <p class="line" data-time="10">সুজলাং সুফলাং</p>
+            <p class="line" data-time="15">মলয়জশীতলাং</p>
+            <p class="line" data-time="19">শস্যশ্যামলাং</p>
+            <p class="line" data-time="22">মাতরম্৷৷</p>
+            <p class="line" data-time="24">বন্দে মাতরম্</p>
+            <p class="line" data-time="28">শুভ্র-জ্যোৎস্না-পুলকিত-যামিনীম্</p>
+            <p class="line" data-time="35">ফুল্লকুসুমিত-দ্রুমদলশোভিনীম্</p>
+            <p class="line" data-time="42">সুহাসিনীং সুমধুরভাষিণীম্</p>
+            <p class="line" data-time="48">সুখদাং বরদাং মাতরম্৷৷</p>
+            <p class="line" data-time="53">বন্দে মাতরম্</p>
+            <p class="line" data-time="57">কোটি কোটিকণ্ঠ কলকল নিনাদকরালে,</p>
+            <p class="line" data-time="66">কোটি কোটী ভুজৈর্ধৃত-খর-করবালে,</p>
+            <p class="line" data-time="73">কে বলে মা তুমি অবলে ৷৷</p>
+            <p class="line" data-time="77">বাহুবলধারিণীং</p>
+            <p class="line" data-time="79">নমামি তারিণীং</p>
+            <p class="line" data-time="81">রিপুদলবারিণীং</p>
+            <p class="line" data-time="84">মাতরম্৷৷</p>
+            <p class="line" data-time="86">বন্দে মাতরম্</p>
+            <p class="line" data-time="90">তুমি বিদ্যা তুমি ধর্ম্ম</p>
+            <p class="line" data-time="95">তুমি হৃদি তুমি মর্ম্ম</p>
+            <p class="line" data-time="100">ত্বং হি প্রাণাঃ শরীরে৷৷</p>
+            <p class="line" data-time="104">বাহুতে তুমি মা শক্তি</p>
+            <p class="line" data-time="109">হৃদয়ে তুমি মা ভক্তি</p>
+            <p class="line" data-time="113">তোমারই প্রতিমা গড়ি</p>
+            <p class="line" data-time="115">মন্দিরে মন্দিরে॥</p>
+            <p class="line" data-time="119">বন্দে মাতরম্</p>
+            <p class="line" data-time="124">ত্বং হি দুর্গা দশপ্রহরণধারিণী</p>
+            <p class="line" data-time="131">কমলা কমল-দলবিহারিণী</p>
+            <p class="line" data-time="135">বাণী বিদ্যাদায়িনী</p>
+            <p class="line" data-time="139">নমামি ত্বাং</p>
+            <p class="line" data-time="141">নমামি কমলাম্</p>
+            <p class="line" data-time="144">অমলাং অতুলাম্</p>
+            <p class="line" data-time="148">সুজলাং সুফলাম্</p>
+            <p class="line" data-time="152">মাতরম্॥</p>
+            <p class="line" data-time="155">বন্দে মাতরম্</p>
+            <p class="line" data-time="160">শ্যামলাং সরলাম্</p>
+            <p class="line" data-time="163">সুস্মিতাং ভূষিতাম্</p>
+            <p class="line" data-time="168">ধরণীং ভরণীম্</p>
+            <p class="line" data-time="173">মাতরম্॥</p>
+            <p class="line" data-time="175">বন্দে মাতরম্</p>
+            <p class="line" data-time="179">বন্দে মাতরম্</p>
+            <p class="line" data-time="185">ব্যবস্থাপনায়: শোভিত রঞ্জন সরকার</p>
         </div>
     </div>
 </div>
