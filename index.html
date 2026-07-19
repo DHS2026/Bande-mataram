@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>বন্দে মাতরম</title>
+<style>
+body { margin: 0; padding: 20px; display: flex; justify-content: center; min-height: 100vh; background: linear-gradient(180deg, #FF9933 33.3%, #FFFFFF 33.3%, #FFFFFF 66.6%, #138808 66.6%); font-family: sans-serif; }
+.container { text-align: center; padding: 20px; background: rgba(0, 0, 0, 0.9); border-radius: 20px; box-shadow: 0 0 20px #FF9933, 0 0 20px #138808; border: 2px solid #fff; width: 100%; max-width: 400px; color: white; }
+audio { width: 100%; margin-bottom: 20px; border-radius: 50px; background: white; }
+.lyrics { height: 350px; overflow-y: hidden; border-top: 1px solid #FF9933; padding-top: 20px; font-size: 18px; line-height: 2.5; position: relative; }
+.line { opacity: 0.6; transition: 0.3s; }
+.active { color: #FF9933; font-weight: bold; transform: scale(1.1); opacity: 1; }
+</style>
+</head>
+<body>
+
+<div class="container">
+<h2>বন্দে মাতরম</h2>
+<!-- সরাসরি অডিও প্লেয়ার -->
+<audio id="audio" controls>
+<source src="https://docs.google.com/uc?export=download&id=1r6HPnOIZJtOM8CC3AqYv3e6gohXnlnRw" type="audio/mpeg">
+</audio>
+
+<div class="lyrics" id="lyricsBox">
+<div id="content">
+<p class="line" data-time="0">বন্দে মাতরম্</p>
+<p class="line" data-time="7">বন্দে মাতরম্</p>
+<p class="line" data-time="11">সুজলাং সুফলাং</p>
+<p class="line" data-time="16">মলয়জশীতলাং</p>
+<p class="line" data-time="20">শস্যশ্যামলাং</p>
+<p class="line" data-time="23">মাতরম্৷৷</p>
+<p class="line" data-time="25">বন্দে মাতরম্</p>
+<p class="line" data-time="29">শুভ্র-জ্যোৎস্না-পুলকিত-যামিনীম্</p>
+<p class="line" data-time="36">ফুল্লকুসুমিত-দ্রুমদলশোভিনীম্</p>
+<p class="line" data-time="43">সুহাসিনীং সুমধুরভাষিণীম্</p>
+<p class="line" data-time="49">সুখদাং বরদাং মাতরম্৷৷</p>
+<p class="line" data-time="54">বন্দে মাতরম্</p>
+<p class="line" data-time="58">কোটি কোটিকণ্ঠ কলকল নিনাদকরালে,</p>
+<p class="line" data-time="67">কোটি কোটী ভুজৈর্ধৃত-খর-করবালে,</p>
+<p class="line" data-time="74">কে বলে মা তুমি অবলে ৷৷</p>
+<p class="line" data-time="78">বহুবলধারিণীং</p>
+<p class="line" data-time="80">নমামি তারিণীং</p>
+<p class="line" data-time="82">রিপুদলবারিণীং</p>
+<p class="line" data-time="85">মাতরম্৷৷</p>
+<p class="line" data-time="87">বন্দে মাতরম্</p>
+<p class="line" data-time="91">তুমি বিদ্যা তুমি ধর্ম্ম</p>
+<p class="line" data-time="96">তুমি হৃদি তুমি মর্ম্ম</p>
+<p class="line" data-time="101">ত্বং হি প্রাণাঃ শরীরে৷৷</p>
+<p class="line" data-time="105">বাহুতে তুমি মা শক্তি</p>
+<p class="line" data-time="110">হৃদয়ে তুমি মা ভক্তি</p>
+<p class="line" data-time="114">তোমারই প্রতিমা গড়ি</p>
+<p class="line" data-time="116">মন্দিরে মন্দিরে॥</p>
+<p class="line" data-time="120">বন্দে মাতরম্</p>
+<p class="line" data-time="125">ত্বং হি দুর্গা দশপ্রহরণধারিণী</p>
+<p class="line" data-time="132">কমলা কমল-দলবিহারিণী</p>
+<p class="line" data-time="136">বাণী বিদ্যাদায়িনী</p>
+<p class="line" data-time="140">নমামি ত্বাং</p>
+<p class="line" data-time="142">নমামি কমলাম্</p>
+<p class="line" data-time="145">অমলাং অতুলাম্</p>
+<p class="line" data-time="149">সুজলাং সুফলাম্</p>
+<p class="line" data-time="153">মাতরম্॥</p>
+<p class="line" data-time="156">বন্দে মাতরম্</p>
+<p class="line" data-time="161">শ্যামলাং সরলাম্</p>
+<p class="line" data-time="164">সুস্মিতাং ভূষিতাম্</p>
+<p class="line" data-time="169">ধরণীং ভরণীম্</p>
+<p class="line" data-time="174">মাতরম্॥</p>
+<p class="line" data-time="176">বন্দে মাতরম্</p>
+<p class="line" data-time="180">বন্দে মাতরম্</p>
+<p class="line" data-time="185">SRS</p>
+</div>
+</div>
+</div>
+
+<script>
+const audio = document.getElementById('audio');
+const lines = document.querySelectorAll('.line');
+const lyricsBox = document.getElementById('lyricsBox');
+
+audio.addEventListener('timeupdate', () => {
+lines.forEach((line, index) => {
+const time = parseInt(line.dataset.time);
+const nextTime = lines[index+1] ? parseInt(lines[index+1].dataset.time) : 999;
+
+if (audio.currentTime >= time && audio.currentTime < nextTime) {
+lines.forEach(l => l.classList.remove('active'));
+line.classList.add('active');
+lyricsBox.scrollTop = line.offsetTop - 150;
+}
+});
+});
+</script>
+</body>
+</html>
